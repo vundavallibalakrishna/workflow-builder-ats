@@ -27,6 +27,14 @@ export const conditions = {
       inputs: [],
       groovy_script: 'job.team != null',
     },
+    {
+      id: 'is_urgent_job',
+      name: 'Is Urgent Job',
+      inputs: [
+        { name: 'urgent', type: 'flag', label: 'Urgent' },
+      ],
+      groovy_script: 'job.isUrgent() == {urgent}',
+    },
   ],
   candidate: [],
   // ... other entities

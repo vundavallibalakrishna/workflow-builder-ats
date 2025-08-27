@@ -26,7 +26,23 @@ export const actions = {
         { name: 'value', type: 'text', label: 'New Value' },
       ],
     },
+    {
+      id: 'assign_to_team',
+      name: 'Assign to Team',
+      inputs: [
+        { name: 'team', type: 'autocomplete', label: 'Team', autocomplete_type: 'teams' },
+      ],
+    },
   ],
-  candidate: [],
+  candidate: [
+    {
+      id: 'send_assessment',
+      name: 'Send Assessment',
+      inputs: [
+        { name: 'email', type: 'email', label: 'Candidate Email' },
+        { name: 'subject', type: 'text', label: 'Email Subject' },
+      ],
+    },
+  ],
   // ... other entities
 };
