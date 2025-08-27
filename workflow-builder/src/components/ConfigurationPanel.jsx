@@ -17,7 +17,6 @@ const ConfigurationPanel = ({ selectedNode, updateNodeData }) => {
   const nodeMetaData = sourceData.find((item) => item.id === data.id);
 
   const handleInputChange = (event) => {
-    const { name, value } = event.target;
     const { name, value, type, checked } = event.target;
     const newValue = type === 'checkbox' ? checked : value;
     updateNodeData(selectedNode.id, { [name]: newValue });
