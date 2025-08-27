@@ -44,5 +44,8 @@ export const actions = {
       ],
     },
   ],
+  submission: [],
+  mapping: [],
+  application: [],
   // ... other entities
 };

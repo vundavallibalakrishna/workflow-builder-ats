@@ -12,12 +12,6 @@ const Sidebar = () => {
   return (
     <aside style={{ width: '250px', borderRight: '1px solid #ddd', padding: '10px', background: '#f7f7f7' }}>
       <h3>Nodes</h3>
-      <strong>Events</strong>
-      <ul>
-        <li onDragStart={(event) => onDragStart(event, 'input', 'start_event', 'Start Event')} draggable>
-          Start Event
-        </li>
-      </ul>
       <strong>Conditions</strong>
       <ul>
         {conditions.job.map((condition) => (

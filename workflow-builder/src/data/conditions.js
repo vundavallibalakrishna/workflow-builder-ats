@@ -37,5 +37,8 @@ export const conditions = {
     },
   ],
   candidate: [],
+  submission: [],
+  mapping: [],
+  application: [],
   // ... other entities
 };
